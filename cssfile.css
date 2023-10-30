@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+.navbar {
+  height: 3.3rem;
+  background-color: #f5eec8;
+  border-bottom: 1px solid rgba(255, 211, 13, 0.9);
+  position: fixed;
+  z-index: 1;
+}
+.navbar > nav > a {
+  text-decoration: none;
+  margin: 30px;
+  color: midnightblue;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar > nav > a:hover {
+  transform: scale(1.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 10px rgba(13, 2, 55, 0.6);
+}
+
+.wlcome {
+  height: 90vh;
+  background-color: #f5eec8;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: start;
+  align-content: space-around;
+}
+.content {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.img {
+  height: 10rem;
+  width: 10rem;
+  padding-top: 70px;
+  margin-left: 10rem;
+}
+.aboutmebtn {
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  border: rgba(0, 0, 0, 0.9);
+  font-size: medium;
+  color: white;
+  background: #310cd3f5;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.9);
+}
+.aboutmebtn:hover {
+  transform: scale(1.1);
+}
+
+.aboutmepage {
+  height: 3.3rem;
+  height: 90vh;
+}
+
+.aboutmeh {
+  text-align: center;
+}
+.aboutmecontent {
+  margin-top: 4rem;
+  margin-left: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mypic {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 30px;
+  border: 1px solid rgba(232, 201, 66, 0.9);
+  box-shadow: 5px 5px 10px rgba(232, 201, 66, 0.9);
+}
+
+.aboutmetext {
+  margin-left: 10rem;
+  height: 66vh;
+  width: 80vh;
+}
+
+.resumecv:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.icons > a >img:hover {
+  transform: scale(1.1);
+  transform: translatey(10px);
+  border-radius: 13px;
+  border: 1px solid rgba(187, 157, 25, 0.9);
+  box-shadow: 5px 5px 10px rgba(187, 157, 25, 0.9);
+  transition: s;
+}
+
+.skilspage {
+  height: 100vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  padding-top: 3.3rem;
+}
+
+.skilslogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.skillsdetails {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skillsdetails > div {
+  height: 20vh;
+}
+
+.educationpage {
+  height: 3.3rem;
+  height: 100vh;
+  background-color: #e5ecfb;
+}
+.educationlogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.textnote {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  border: 1px solid hsla(285, 17%, 95%, 0.8);
+  border-radius: 5px;
+  margin: 120px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 5px 10px 10px rgba(37, 4, 50, 0.9);
+  transition: .4s;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-image {
+  flex: 1;
+}
+
+.card-description {
+  flex: 2;
+  padding: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/*  */
+.edudetails {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.edudetails > div {
+  height: 25vh;
+  background-color: #4a00e0;
+  margin: 0rem 4rem 0 4rem;
+}
+
+.ch1edu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.imgedit {
+  width: 40vh;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: brown;
+}
+.description {
+  background-color: red;
+  height: 100%;
+  width: 20rem;
+}
+
+.projectspage {
+  height: 3.3rem;
+  height: 100vh;
+  background: linear-gradient(to bottom, #000031, #00002c);
+}
+
+/*  */
+.showprojects{
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.showbtn{
+  transition: .3s;
+}
+
+.showbtn:hover{
+  transform: scale(1.3);
+}
+.experience {
+  height: 3.3rem;
+
+  height: 100vh;
+  background-color: white;
+}
+
+.gitintouch {
+  height: 90vh;
+  background-color: #e5ecfb;
+}
+.ginintouchlogo {
+}
+
+.gitintouchbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.boxcontent {
+  width: 140vh;
+  margin-top: 20px;
+  height: 70vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.boximage {
+  height: 100%;
+  flex: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.contentt {
+  margin-left: 10px;
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-content: space-between;
+}
+.inputs {
+  background-color: #e5ecfb;
+  width: 20rem;
+  height: 2.7rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  color: white;
+  margin-top: 3px;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 10px;
+  background: #310cd3f5;
+  box-shadow: 0px 5px 5px rgba(65, 84, 241, 0.5);
+  border: 1px snow;
+  transition: 0.5s;
+}
+.submit:hover {
+  transform: scale(1.1);
+}
+.footer {
+  height: 50vh;
+  background-color: #00002c;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: white;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.skill-bar:hover {
+  transform: scale(1.05);
+}
+
+.skill-level {
+  background-color: yellow;
+  border-radius: 5px;
+  height: 20px;
+}

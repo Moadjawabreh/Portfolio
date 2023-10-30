@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cssfile.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script> 
+    function scrollToTargetDiv(divid){
+      var targetdiv=document.getElementById(divid);
+      targetdiv.scrollIntoView({behavior :'smooth'});
+
+    }
+    </script>
+  </head>
+  <body>
+   
+    
+    <div class="container">
+      <header class="navbar">
+        <a href="#" class="Logoname"></a>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a  onclick="scrollToTargetDiv('aboutme')" href="#">About me</a>
+          <a  onclick="scrollToTargetDiv('skils')" href="#">Skils</a>
+          <a  onclick="scrollToTargetDiv('myeducation')" href="#">My Education</a>
+          <a  onclick="scrollToTargetDiv('projecsmade')" href="#">Projects Made</a>
+          <a  onclick="scrollToTargetDiv('experience')" href="#">Experience</a>
+
+        </nav>
+      </header>
+
+      <div class="wlcome">
+        <div class="content">
+          <h1 style="color: midnightblue">
+            Hi There <br />
+            I'm moad <span style="color: rgb(255, 211, 13)">Jawabreh</span>
+          </h1>
+          <br />
+          <h3>I Am into a Web Developer</h3>
+          <br />
+          <br />
+          <button class="aboutmebtn">About me</button>
+          <div class="icons" style="top: 20px">
+            <br />
+              <a href="https://www.facebook.com/" target="_blank"><img style="height:  30px" src="facebook.png" /></a>
+           <a href="https://www.linkedin.com/" target="_blank">
+            <img
+            style="height: 30px; margin-left: 6px; margin-right: 3px"
+            src="linkedin.png"
+          />
+           </a> 
+            
+           <a href="https://twitter.com/" target="_blank"><img style="height: 30px" src="twitter.png" /></a>
+           <a href="https://www.instagram.com/"target="_blank"><img style="height: 30px" src="instagram_4902354.png" /></a>
+           <a href="">            <img style="height: 30px; margin-left: 5px;" src="whatsapp (1).png"/></a>
+            
+          </div>
+        </div>
+
+        <div class="img">
+          <img
+            src="favicon.png"
+            style="height: 30rem; width: 30rem; border-radius: 20px"
+          />
+        </div>
+      </div>
+    </div>
+
+        <!-- about me  -->
+
+
+    <div class="aboutmepage" id="aboutme">
+      <div class="aboutmeh">
+      <h1><img src="user.png" style="margin-top: 8px;margin-right: 7px; height: 30px;">About <span style="color: blueviolet">me</span></h1>
+      </div>
+      <div class="aboutmecontent">
+      <img class="mypic" src="pic.jpg" >
+      <div style="padding-left: 20px ;" class="aboutmetext">
+        <h2>I'm Moad</h2>
+        <h3 style="margin-top: 10px;">Full Stack Developer</h3>
+        <p style="margin-top: 5px;">I'm a recent computer engineer graduate with a strong background in C# programming and a passion for .NET development.
+          <p>I'm eager to apply my skills to create innovative software solutions and thrive in collaborative team environments</p> 
+          
+          <p style="margin-top: 20px;color: rgb(255, 211, 13) ;"><b>Email</b><span style="color: black;"> : moadjawabreh2001@gmail.com</span></p>
+         <p style="margin-top: 20px;color: rgb(255, 211, 13);"><b>Place</b> <span style="color: black;">: Amman-Jordan</span></p> 
+        </p>
+
+        <div style="margin-top: 30px; height:20vh ;display: flex; flex-wrap: wrap; align-content: center;  justify-content: center;">
+           <button class="resumecv" style="height: 6vh;width: 30vh; border-radius: 15px; background: #310ae0f5; box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.9);border: rgba(0, 0, 0, 0.9);">
+            <a style="        text-decoration: none;" href="https://drive.google.com/file/d/1oth-W3oWL3-iWCDy_8xNI7nMq2RU2KKM/view?usp=sharing" target="_blank" class="btn">
+              <span style="color: white;"> <b>Resume ></b></span>
+      </a>  </button>
+    </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div style="height: 20vh;"></div>
+    
+    
+    
+    <!-- skills  -->
+    <div class="skilspage" id="skils">
+      <div class="skilslogo">
+         <h1><img src="icons8-laptop-coding-64.png" style=" height: 3rem; width: 3rem;margin-right: 8px; padding-bottom: 5px;"></h1>
+        <h1  style="color: white;" >Skills & <span style="color:rgb(255, 211, 13) ;">Abilities</span></h1>
+        </div>
+
+
+        <div style="margin: 3rem;" class="skill">
+          <p class="skill-name">HTML</p>
+          <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+          </div>
+      </div>
+      <div style="margin: 3rem;" class="skill">
+          <p class="skill-name">CSS</p>
+          <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+          </div>
+      </div>
+      <div style="margin: 3rem;" class="skill">
+          <p class="skill-name">JavaScript</p>
+          <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+          </div>
+      </div>
+      <div style="margin: 3rem;" class="skill">
+        <p class="skill-name">OOP</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div style="margin: 3rem;" class="skill">
+        <p class="skill-name">C#</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 85%;"></div>
+        </div>
+    </div>
+    <div style="margin: 3rem;" class="skill">
+        <p class="skill-name">SQL</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 80%;"></div>
+        </div>
+    </div>
+
+
+
+      
+    </div>
+
+    <div ></div>
+
+
+        <!-- education  -->
+
+    <div class="educationpage" id="myeducation">
+      <div class="educationlogo">
+       <img src="education.png" style=" height: 3rem; width: 3rem;margin-right: 8px; padding-bottom: 5px;">
+        <h1>My <span style="color: rgb(115, 3, 167);">Education</span></h1>
+      </div>
+      <div class="textnote">
+        Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
+      </div>
+     
+      <div class="card">
+        <div  class="card-image">
+            <img style="height: 10rem; width:23rem ;" src="Hijjawicolledg.jpg">
+        </div>
+        <div class="card-description">
+            <h3>Bachelor of Computer Engineering (Very Good)</h3>
+            <p style="margin-top: 2rem;">Yarmouk University - Hijjawi College</p>
+            <p style="margin-top: 2rem; color:green ;"><b>2019-2023</b></p>
+
+          </div>
+    </div>
+      
+    </div>
+
+            <!-- projects page  -->
+
+    <div class="projectspage" id="projecsmade">
+      <div class="skilslogo">
+        <h1><img src="icons8-laptop-coding-64.png" style=" height: 3rem; width: 3rem;margin-right: 8px; padding-bottom: 5px;"></h1>
+       <h1  style="color: white;" >Projects <span style="color:rgb(255, 211, 13) ;">Made</span></h1>
+       </div>
+
+       <div class="showprojects">
+       
+      <div class="showbtn" style="background-color: #000031; height: 4rem;border-radius: 10px; border: 1px snow solid ; 
+      box-shadow: 5px 5px 10px rgba(25, 25, 250, 0.9);
+      margin-top: 50px;
+      width: 14rem;display: flex;flex-wrap: wrap; align-content: center;
+       justify-content: center;">
+
+         <a href="https://github.com/Moadjawabreh?tab=repositories" ;
+         style="color: white; text-decoration: none;  " target="_blank"><b>Show All</b></a>
+        
+        </div> 
+       
+      </div>
+
+    </div>
+
+    
+
+  
+  
+    <!-- experience page  -->
+
+    <div class="experience" id="experience">
+      <div class="skilslogo">
+        <img src="icons8-experience-50.png" style=" height: 3rem; width: 3rem;margin-right: 8px; padding-bottom: 5px;">
+       <h1  style="color: black;" >Experience</h1>
+       </div>
+       
+       <div class="card">
+        <div  class="card-image">
+            <img style="height: 15rem; width:23rem ;" src="326252-P9NGJU-588.jpg">
+        </div>
+        <div class="card-description">
+           <p style="margin-top: 50px; font-size: large;font-weight: bold;">Self-Study Experience: Building 
+            a Simple Library Management 
+            SystemObjective: To gain 
+            a practical understanding of
+             ObjectOriented Programming (OOP) 
+             principles and apply them to develop
+              a basic library management system using .NET technologies.</p>
+          </div>
+    </div>
+    </div>
+
+
+    <!-- get in touch  -->
+
+    <div class="gitintouch">
+      <div class="skilslogo">
+        <h1><img src="icons8-headphones-64.png" style=" height: 3rem; width: 3rem;margin-right: 8px; padding-bottom: 5px;"></h1>
+       <h1  style="color: black;" >Get in <span style="color: rgb(115, 3, 167);">touch</span></h1>
+      </div>
+      <div class="gitintouchbox">
+      <div class="boxcontent">
+        <div class="boximage">
+          <img src="contact1.png">
+        </div>
+        <div class="contentt">
+          <form action="">
+            <div><input class="inputs" type="text" placeholder="Name"></div>
+            <div><input class="inputs" type="email" placeholder="Email"></div>
+            <div><input class="inputs" type="number" placeholder="Phone Number"></div>
+           
+            <div><textarea cols="43" rows="10" placeholder="Message" style="margin-top: 10px;padding-top: 6px;padding-left: 7px; background-color:  #e5ecfb;"></textarea></div>
+            
+            <input class="submit"  type="submit">
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    
+    <div class="footer">
+      
+    </div>
+   
+
+  </body>
+</html>

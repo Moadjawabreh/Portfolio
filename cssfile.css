@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: "Poppins", sans-serif;
+}
 header {
   position: fixed;
   top: 0;
@@ -20,9 +26,8 @@ header {
 
 .navbar {
   height: 3.3rem;
-  background-color: #f5eec8;
+  background-color: white;
   border-bottom: 1px solid rgba(255, 211, 13, 0.9);
-  position: fixed;
   z-index: 1;
 }
 .navbar > nav > a {
@@ -41,7 +46,7 @@ header {
 
 .wlcome {
   height: 90vh;
-  background-color: #f5eec8;
+  background-color: #f5f7f8;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -55,10 +60,9 @@ header {
   left: 120px;
 }
 .img {
-  height: 10rem;
+  height: 15rem;
   width: 10rem;
   padding-top: 70px;
-  margin-left: 10rem;
 }
 .aboutmebtn {
   width: 160px;
@@ -75,7 +79,7 @@ header {
 }
 
 .aboutmepage {
-  height: 3.3rem;
+  padding-top: 3.3rem;
   height: 90vh;
 }
 
@@ -107,7 +111,7 @@ header {
   transition: 0.3s;
   transform: scale(1.1);
 }
-.icons > a >img:hover {
+.icons > a > img:hover {
   transform: scale(1.1);
   transform: translatey(10px);
   border-radius: 13px;
@@ -141,8 +145,8 @@ header {
 }
 
 .educationpage {
-  height: 3.3rem;
-  height: 100vh;
+  padding-top: 3.3rem;
+  height: 120vh;
   background-color: #e5ecfb;
 }
 .educationlogo {
@@ -160,15 +164,16 @@ header {
 
 .card {
   display: flex;
-  border: 1px solid hsla(285, 17%, 95%, 0.8);
+  border: 1px solid hsla(285, 17%, 95%);
   border-radius: 5px;
-  margin: 120px;
+  margin: 60px;
+  flex-wrap: wrap;
   padding: 10px;
   background-color: #fff;
   box-shadow: 5px 10px 10px rgba(37, 4, 50, 0.9);
-  transition: .4s;
+  transition: 0.4s;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.05);
 }
 
@@ -177,7 +182,7 @@ header {
 }
 
 .card-description {
-  flex: 2;
+  flex: 3;
   padding: 10px;
 }
 
@@ -223,27 +228,92 @@ header {
 }
 
 .projectspage {
-  height: 3.3rem;
+  padding-top: 3.3rem;
   height: 100vh;
+  flex-wrap: wrap;
   background: linear-gradient(to bottom, #000031, #00002c);
+  position: relative;
 }
 
-/*  */
-.showprojects{
+.cardscontainer {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.cardproject {
+  height: 20rem;
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px snow solid;
+
+  box-shadow: 5px 5px 10px rgba(25, 25, 250, 0.9);
+  transition: 0.4s;
+}
+
+.cardproject:hover {
+  transform: scale(1.1);
+
+  border-radius: 10px;
+  border: 1px snow solid;
+
+  box-shadow: 5px 5px 10px rgba(25, 25, 250, 0.9);
+}
+
+.imageproj {
+  background-color: red;
+  margin: 10px;
+  border: 1px solid black;
+  flex: 2;
+  background-image: url("OJZ2IY0.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.contentproj {
+  flex: 1;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+}
+
+.showprojects {
   height: 20vh;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
-.showbtn{
-  transition: .3s;
+.showbtn {
+  background-color: #000031;
+  height: 4rem;
+  border-radius: 10px;
+  border: 1px snow solid;
+  box-shadow: 5px 5px 10px rgba(25, 25, 250, 0.9);
+  margin-top: 50px;
+  width: 14rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  transition: 0.3s;
+  margin-top: 400px;
 }
 
-.showbtn:hover{
+.showbtn:hover {
   transform: scale(1.3);
 }
-.experience {
-  height: 3.3rem;
 
+/*  */
+
+.experience {
+  padding-top: 3.3rem;
   height: 100vh;
   background-color: white;
 }
@@ -313,10 +383,6 @@ header {
 .submit:hover {
   transform: scale(1.1);
 }
-.footer {
-  height: 50vh;
-  background-color: #00002c;
-}
 
 .skill-name {
   font-weight: bold;
@@ -334,7 +400,94 @@ header {
 }
 
 .skill-level {
-  background-color: yellow;
+  background-color: rgb(255, 211, 13);
   border-radius: 5px;
   height: 20px;
+}
+
+.footer {
+  color: #fff;
+  background-color: #00002c;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links {
+  flex: 2;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links ul li {
+  margin-top: 2rem;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(232, 201, 66, 0.7);
+}
+
+.footer-social {
+  margin-top: 2rem;
+  flex: 1;
+  text-align: right;
+}
+
+.footer-social a {
+  color: rgba(232, 201, 66, 0.5);
+  margin: 0 10px;
+  font-size: 28px;
+}
+
+@media (max-width: 1200px) {
+  .skilspage {
+    margin-top: 50vh;
+  }
+  .projectspage {
+  }
+
+  .gitintouch {
+    margin-top: 20vh;
+  }
+}
+
+@media ((min-width: 500px) and (max-width: 750px)) {
+  .favimg {
+    width: 10rem;
+    height: 10rem;
+  }
+  .skilspage {
+    margin-top: 60vh;
+  }
+}
+
+@media (max-width: 933x) {
+  .showprojects {
+    margin: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    margin-top: 30rem;
+  }
 }

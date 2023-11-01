@@ -3,32 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio | Moad Jawabreh</title>
     <link rel="stylesheet" href="cssfile.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script> 
-    function scrollToTargetDiv(divid){
-      var targetdiv=document.getElementById(divid);
-      targetdiv.scrollIntoView({behavior :'smooth'});
-
-    }
-    </script>
-  </head>
-  <body>
-   
     
+  </head>
+  <body> 
     <div class="container">
       <header class="navbar">
-        <a href="#" class="Logoname"></a>
+        <a href="#" class="Logoname"><img style=" filter: contrast(150%); border: 1px  #000; 
+         width: 3.1rem;box-shadow: 2px 2px 2px  rgba(142, 116, 4, 0.5);
+          
+
+         " src="Screenshot_2023-10-30_234329-removebg-preview (1).png"></a>
         <nav class="nav">
           <a href="#">Home</a>
-          <a  onclick="scrollToTargetDiv('aboutme')" href="#">About me</a>
-          <a  onclick="scrollToTargetDiv('skils')" href="#">Skils</a>
-          <a  onclick="scrollToTargetDiv('myeducation')" href="#">My Education</a>
-          <a  onclick="scrollToTargetDiv('projecsmade')" href="#">Projects Made</a>
-          <a  onclick="scrollToTargetDiv('experience')" href="#">Experience</a>
+          <a   href="#aboutme">About me</a>
+          <a   href="#skils">Skills</a>
+          <a   href="#myeducation">My Education</a>
+          <a   href="#projecsmade">Projects Made</a>
+          <a   href="#experience">Experience</a>
 
         </nav>
       </header>
@@ -62,7 +58,7 @@
         </div>
 
         <div class="img">
-          <img
+          <img class="favimg"
             src="favicon.png"
             style="height: 30rem; width: 30rem; border-radius: 20px"
           />
@@ -141,19 +137,12 @@
             <div class="skill-level" style="width: 85%;"></div>
         </div>
     </div>
-    <div style="margin: 3rem;" class="skill">
-        <p class="skill-name">SQL</p>
-        <div class="skill-bar">
-            <div class="skill-level" style="width: 80%;"></div>
-        </div>
-    </div>
-
+    
 
 
       
     </div>
 
-    <div ></div>
 
 
         <!-- education  -->
@@ -167,18 +156,34 @@
         Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
       </div>
      
+
+        <div class="card">
+          <div  class="card-image">
+              <img style="height: 100%; width:80% ;" src="Hijjawicolledg.jpg">
+          </div>
+          <div class="card-description">
+              <h3>Bachelor of Computer Engineering (Very Good)</h3>
+              <p style="margin-top: 2rem;">Yarmouk University - Hijjawi College</p>
+              <p style="margin-top: 2rem; color:green ;"><b>2019-2023</b></p>
+  
+            </div>
+            
+      </div>
+        
+  
       <div class="card">
         <div  class="card-image">
-            <img style="height: 10rem; width:23rem ;" src="Hijjawicolledg.jpg">
+            <img style="height: 100%; width:80% ;" src="Hijjawicolledg.jpg">
         </div>
         <div class="card-description">
             <h3>Bachelor of Computer Engineering (Very Good)</h3>
             <p style="margin-top: 2rem;">Yarmouk University - Hijjawi College</p>
             <p style="margin-top: 2rem; color:green ;"><b>2019-2023</b></p>
-
+  
           </div>
-    </div>
-      
+          
+    </div>     
+
     </div>
 
             <!-- projects page  -->
@@ -189,20 +194,37 @@
        <h1  style="color: white;" >Projects <span style="color:rgb(255, 211, 13) ;">Made</span></h1>
        </div>
 
+       <div class="cardscontainer">
+        
+       
+          <div class="cardproject">
+            <div class="imageproj">
+            </div>
+            <div class="contentproj">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis ipsum! Modi totam nulla adipisci itaque ratione libero nobis quibusdam, iusto, molestiae tempora quia asperiores possimus laboriosam facere sunt hic.
+            </div>
+          </div>
+
+          <div class="cardproject">
+            <div class="imageproj">
+            </div>
+            <div class="contentproj">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis ipsum! Modi totam nulla adipisci itaque ratione libero nobis quibusdam, iusto, molestiae tempora quia asperiores possimus laboriosam facere sunt hic.
+            </div>
+          </div>
+
+       </div>
+
+       
        <div class="showprojects">
        
-      <div class="showbtn" style="background-color: #000031; height: 4rem;border-radius: 10px; border: 1px snow solid ; 
-      box-shadow: 5px 5px 10px rgba(25, 25, 250, 0.9);
-      margin-top: 50px;
-      width: 14rem;display: flex;flex-wrap: wrap; align-content: center;
-       justify-content: center;">
+        <div class="showbtn">
+          <a href="https://github.com/Moadjawabreh?tab=repositories" target="_blank" style="color: white ; text-decoration: none;">Show All</a>
 
-         <a href="https://github.com/Moadjawabreh?tab=repositories" ;
-         style="color: white; text-decoration: none;  " target="_blank"><b>Show All</b></a>
-        
-        </div> 
-       
-      </div>
+          </div> 
+         
+        </div>
+
 
     </div>
 
@@ -264,9 +286,33 @@
     </div>
     </div>
     
-    <div class="footer">
       
-    </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Screenshot_2023-10-30_234329-removebg-preview (1).png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutme">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#gitintouchbox">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/" target="_blank"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Moadjawabreh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-eye"></i></a>
+
+
+            </div>
+        </div>
+    </footer>
    
 
   </body>
